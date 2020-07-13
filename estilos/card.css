@@ -105,5 +105,20 @@
 
     .card-block .mag{margin-left: 27%;}
 
+}
+
+/*---------------------------------------*/
+
+@media screen and (max-width:419px){
+  .row{padding-left: 7px;}
+  .botons{
+      align-items: center;
+  }
+  .card-block .btn-success {
+    padding-left: 11px;
+    padding-right: 12px;
+}
 
 }
+
+
