@@ -1,0 +1,109 @@
+@import url(card.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: hsla(190, 17%, 7%, 0.589);
+}
+
+.navbar .dropdown-menu a:hover {
+    background: rgb(159, 160, 160);
+}
+
+@media screen and (max-width:800px) {
+    .navbar .dropdown-menu {
+        left: 15px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .navbar .dropdown-menu {
+        left: 15px;
+    }
+}
+
+
+.top-nav-collapse {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(7, 2, 13, 0.959)), to(rgba(14, 105, 196, 0.973)));
+    background: linear-gradient(to right, rgba(7, 2, 13, 0.979), rgba(14, 105, 196, 0.973)) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background: #2c3e50;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(7, 2, 13, 0.884)), to(rgba(14, 105, 196, 0.89)));
+        background: linear-gradient(to right, rgba(7, 2, 13, 0.884), rgba(14, 105, 196, 0.89));
+    }
+}
+
+/* --------------------------------------------HEADER-------------------------------------------- */
+
+header {
+    position: relative;
+    height: 105vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101.8vh;
+    width: 100%;
+    background: hsla(224, 26%, 25%, 0.856);
+    opacity: 0.85;
+    z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.w-100 h1 {
+    padding-top: 100x;
+}
+
+.w-100 p {
+    font-size: 35px;
+}
+
+.w-100 .fa-chevron-down {
+    font-size: 45px;
+    color: rgb(158, 158, 158);
+    padding-top: 90px;
+}
+
+.w-100 .fa-chevron-down:hover {
+    color: #ffffff;
+}

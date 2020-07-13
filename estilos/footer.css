@@ -1,0 +1,96 @@
+
+.bg-black {
+    padding: 10px 0 20px;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to top, hsla(0, 0%, 0%, 0.788), hsla(211, 68%, 6%, 0.308), hsla(0, 0%, 100%, 0.842));
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 0.788), hsla(209, 66%, 7%, 0.288), hsla(0, 0%, 100%, 0.904)) !important;
+}
+
+.social {
+    margin-top: 1rem;
+    padding: 0px 0 15px;
+}
+
+.social a {
+    text-align: center;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 100%;
+    line-height: 2.9rem;
+    font-size: 22px;
+}
+
+.social .face {
+    background: rgb(7, 70, 129);
+    color: rgb(253, 253, 253);
+}
+
+.social .git {
+    background: rgb(5, 5, 5);
+    color: rgb(253, 253, 253);
+}
+
+.social .git:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgb(0, 0, 0), to, rgb(185, 185, 185));
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(185, 185, 185));
+}
+
+.social .yout {
+    background: rgb(216, 10, 10);
+    color: rgb(253, 253, 253);
+}
+
+.social .yout:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgba(255, 0, 0, 0.863));
+}
+
+
+.social .what {
+    background: rgb(11, 179, 39);
+    color: rgb(253, 253, 253);
+}
+
+.social .what:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgb(11, 179, 39));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgb(11, 179, 39));
+}
+
+.social .twit {
+    background: rgb(15, 104, 187);
+    color: rgb(253, 253, 253);
+}
+
+
+.social a:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.959)), to(rgba(36, 189, 216, 0.966));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.959), rgba(36, 189, 216, 0.966));
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+
+.social a:active {
+    color: rgb(0, 0, 0);
+}
+
+footer .container{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+footer hr{
+    border-color: #000000;
+    border-width: 0.15rem;
+    margin-right: 2rem;
+    padding: 0 0 10px;
+}
+
+@media screen and (max-width:550px){
+    .social{
+       flex-wrap: wrap;
+    }
+}

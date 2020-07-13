@@ -1,0 +1,109 @@
+.apk {
+    padding: 62px 0 130px 0;
+    top: -20px; 
+    min-width: 100%;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, hsla(199, 44%, 7%, 0.603), hsla(198, 43%, 11%, 0.5)), url(../img/wallpaper.jpg);
+    background: linear-gradient(to right, hsla(200, 46%, 5%, 0.616), hsla(198, 43%, 11%, 0.521)), url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative; 
+
+}
+
+.titulo {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.row {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.row .card {
+    background: #17243f;
+}
+.card-block .btn-success {
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-block .btn-success:hover{
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.959)), to(rgba(8, 236, 65, 0.966));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.959), rgba(8, 236, 65, 0.966));
+}
+
+.card-block .mag{
+    margin-left: 40px;
+}
+
+.card-block .btn-danger {
+    border-radius: 15px;
+    padding-left: 14px;
+    padding-right: 15px;
+}
+
+.card-block .btn-danger:hover{
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863) );
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgba(255, 0, 0, 0.863));
+
+}
+
+.card-block .card-title {
+    color: #fff;
+    margin: 8px;
+}
+
+.card-block .far {
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.img-fluid:hover{
+  filter: saturate(200%)
+}
+
+
+@media screen and (max-width:1080px) {
+    .botons {
+        padding-left: 50px;
+    }
+    .card-block .mag{ margin-left: 15px;}
+}
+
+@media screen and (max-width:950px) {
+    .row {
+        padding-top: 0px;
+        padding-right: 23px;
+    }
+
+    .botons { padding-left: 10px;}
+}
+@media screen and (max-width:750px){
+    .col-md-3{padding-top: 12px;}
+    .botons{padding-left: 60px;}
+}
+@media screen and (max-width:550px) {
+    
+    .col-md-3 {
+        width: 25px;
+        padding-top: 19px;
+    }
+
+    .botons {padding-left: 85px;}
+
+    .card-block .btn-success {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-block .mag{margin-left: 27%;}
+
+
+}
