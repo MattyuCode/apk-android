@@ -1,17 +1,18 @@
 .apk {
     padding: 62px 0 130px 0;
-    top: -20px; 
+    top: -20px;
     min-width: 100%;
     background: #0F2027;
     background: -webkit-linear-gradient(to right, hsla(199, 44%, 7%, 0.603), hsla(198, 43%, 11%, 0.5)), url(../img/wallpaper.jpg);
     background: linear-gradient(to right, hsla(200, 46%, 5%, 0.616), hsla(198, 43%, 11%, 0.521)), url(../img/wallpaper.jpg);
     background-size: cover;
     background-attachment: fixed;
-    position: relative; 
+    position: relative;
 
 }
 
 .titulo {
+    text-transform: uppercase;
     color: #fff;
     font-size: 25px;
     text-align: center;
@@ -19,40 +20,50 @@
 }
 
 .row {
-    padding-top: 15px;
-    padding-bottom: 55px;
+    /* padding-top: 155px; */
+    /* padding-bottom: 55px; */
 }
 
 .row .card {
-    background: #17243f;
-}
-.card-block .btn-success {
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
 }
 
-.card-block .btn-success:hover{
+.row .card .botons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-block .btn-success {
+    width: 100%;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.card-block .btn-success:hover {
     background: #2c3e50;
     background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.959)), to(rgba(8, 236, 65, 0.966));
     background: linear-gradient(to top, rgba(7, 2, 13, 0.959), rgba(8, 236, 65, 0.966));
 }
 
-.card-block .mag{
-    margin-left: 40px;
-}
-
 .card-block .btn-danger {
+    width: 100%;
     border-radius: 15px;
     padding-left: 14px;
     padding-right: 15px;
 }
 
-.card-block .btn-danger:hover{
+.card-block .btn-danger:hover {
     background: #2c3e50;
-    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863) );
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863));
     background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgba(255, 0, 0, 0.863));
-
 }
 
 .card-block .card-title {
@@ -60,65 +71,14 @@
     margin: 8px;
 }
 
-.card-block .far {
-    font-size: 20px;
-    padding-left: 2px;
+.img-fluid:hover {
+    transform: scale(1.02);
+    filter: saturate(200%)
 }
 
-.img-fluid:hover{
-  filter: saturate(200%)
-}
-
-
-@media screen and (max-width:1080px) {
-    .botons {
-        padding-left: 50px;
-    }
-    .card-block .mag{ margin-left: 15px;}
-}
-
-@media screen and (max-width:950px) {
-    .row {
-        padding-top: 0px;
-        padding-right: 23px;
-    }
-
-    .botons { padding-left: 10px;}
-}
-@media screen and (max-width:750px){
-    .col-md-3{padding-top: 12px;}
-    .botons{padding-left: 60px;}
-}
-@media screen and (max-width:550px) {
-    
+@media screen and (max-width: 560px) {
     .col-md-3 {
-        width: 25px;
-        padding-top: 19px;
+        /* border: red 1px solid; */
+        display: flex;
     }
-
-    .botons {padding-left: 85px;}
-
-    .card-block .btn-success {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .card-block .mag{margin-left: 27%;}
-
 }
-
-/*---------------------------------------*/
-
-@media screen and (max-width:419px){
-  .row{padding-left: 7px;}
-  .botons{
-      align-items: center;
-  }
-  .card-block .btn-success {
-    padding-left: 11px;
-    padding-right: 12px;
-}
-
-}
-
-

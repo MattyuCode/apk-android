@@ -1,4 +1,3 @@
-
 .bg-black {
     padding: 10px 0 20px;
     background: #bdc3c7;
@@ -11,6 +10,12 @@
     padding: 0px 0 15px;
 }
 
+.social .fab {
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
 .social a {
     text-align: center;
     height: 2.8rem;
@@ -18,11 +23,42 @@
     border-radius: 100%;
     line-height: 2.9rem;
     font-size: 22px;
+    text-decoration: none;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social a:hover {
+    transform: translateY(-8px);
+    box-shadow: -5px -5px 18px rgba(0, 0, 0, 0.7);
+}
+
+.social a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social a:hover::after {
+    top: 0;
 }
 
 .social .face {
-    background: rgb(7, 70, 129);
+    background: #074783;
     color: rgb(253, 253, 253);
+}
+
+.social .face:hover {
+    font-size: 28px;
+    /* background: white; */
+    color: #074783;
 }
 
 .social .git {
@@ -31,9 +67,32 @@
 }
 
 .social .git:hover {
-    background: #2c3e50;
-    background: -webkit-gradient(linear, top rgb(0, 0, 0), to, rgb(185, 185, 185));
-    background: linear-gradient(to top, rgb(0, 0, 0), rgb(185, 185, 185));
+    font-size: 28px;
+    /* background: #fdfdfd; */
+    color: #050505;
+}
+
+.social .tele {
+    background: hsl(216deg, 100%, 50%);
+    color: hsl(0deg, 0%, 100%);
+    font-size: 25px;
+}
+
+.social .tele:hover {
+    font-size: 28px;
+    /* background: rgba(255, 255, 255, 0.815); */
+    color: #0066ff;
+}
+
+.social .insta {
+    background: linear-gradient(30deg, yellow, red, purple, rgba(0, 0, 255, 0.42));
+    color: #ffff;
+}
+
+.social .insta:hover {
+    font-size: 28px;
+    /* background: #ffff; */
+    color: red;
 }
 
 .social .yout {
@@ -42,9 +101,9 @@
 }
 
 .social .yout:hover {
-    background: #2c3e50;
-    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863));
-    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgba(255, 0, 0, 0.863));
+    font-size: 28px;
+    /* background: #fdfdfd; */
+    color: #d80a0a;
 }
 
 
@@ -54,43 +113,40 @@
 }
 
 .social .what:hover {
-    background: #2c3e50;
-    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgb(11, 179, 39));
-    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgb(11, 179, 39));
+    font-size: 28px;
+    /* background: #fdfdfd; */
+    color: #11d332;
 }
 
 .social .twit {
-    background: rgb(15, 104, 187);
+    background: #2b71f3;
     color: rgb(253, 253, 253);
 }
 
-
-.social a:hover {
-    background: #2c3e50;
-    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.959)), to(rgba(36, 189, 216, 0.966));
-    background: linear-gradient(to top, rgba(7, 2, 13, 0.959), rgba(36, 189, 216, 0.966));
-    font-size: 26px;
-    color: rgb(255, 255, 255);
+.social .twit:hover {
+    font-size: 28px;
+    /* background: rgba(255, 255, 255, 0.815); */
+    color: #2c72f3;
 }
 
 .social a:active {
     color: rgb(0, 0, 0);
 }
 
-footer .container{
+footer .container {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.829);
 }
 
-footer hr{
+footer hr {
     border-color: #000000;
     border-width: 0.15rem;
     margin-right: 2rem;
     padding: 0 0 10px;
 }
 
-@media screen and (max-width:550px){
-    .social{
-       flex-wrap: wrap;
+@media screen and (max-width:550px) {
+    .social {
+        flex-wrap: wrap;
     }
 }
