@@ -4,14 +4,30 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    background: #333;
+    height: 6px;
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #FFF, inset -5px -5px 15px #dbe0e7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .navbar {
     background-color: hsla(0, 0%, 3%, 0.5);
 }
 
 .top-nav-collapse {
-    background: #101110;  
-    background: -webkit-linear-gradient(to right, rgb(8, 165, 255), rgb(20, 22, 21));  
-    background: linear-gradient(to right, rgb(8, 165, 255), rgb(22, 24, 23)); 
+    background: #101110;
+    background: -webkit-linear-gradient(to right, rgb(8, 165, 255), rgb(20, 22, 21));
+    background: linear-gradient(to right, rgb(8, 165, 255), rgb(22, 24, 23));
 }
 
 @media only screen and (max-width: 768px) {
@@ -34,7 +50,7 @@ body {
     background: linear-gradient(to right, hsla(188, 39%, 49%, 0.158), hsla(210, 30%, 24%, 0.521)), url(../img/Matt.jpg);
     background-size: cover;
     background-attachment: fixed;
-    position: relative; 
+    position: relative;
 }
 
 
@@ -45,21 +61,21 @@ body {
     width: 50%;
 }
 
-.list-group a{
+.list-group a {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.list-group span{
+.list-group span {
     margin-right: 20px;
 }
 
-.list-group i{
+.list-group i {
     margin: 10px;
     font-size: 22px;
 }
 
-.list-group-item:hover{
+.list-group-item:hover {
     background: rgb(8, 165, 255);
     color: #ffffff;
 }
