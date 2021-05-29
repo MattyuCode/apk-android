@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb:hover {
 @media screen and (max-width:800px) {
     .navbar .navbar-collapse .nav-itemn {
         margin: 6.2px;
-        border: solid 1px red;
     }
 
     .navbar .dropdown-menu {
